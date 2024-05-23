@@ -2,10 +2,11 @@
   "name": "express-locallibrary-tutorial",
   "version": "0.0.0",
   "engines": {
-    "node": ">=v18.17.1"
+    "node": ">=18.17.1"
   },
   "private": true,
   "scripts": {
+    "prestart": "npm install --omit=dev",
     "start": "node ./bin/www",
     "devstart": "nodemon ./bin/www",
     "serverstart": "DEBUG=express-locallibrary-tutorial:* npm run devstart"
